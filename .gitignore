@@ -1,0 +1,11 @@
+# Ignore everything
+*
+
+# Except exercises and project directories
+!exercises/
+!project/
+!.gitignore
+
+# Make sure files within these directories are tracked
+!exercises/**
+!project/**
