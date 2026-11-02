@@ -1,0 +1,582 @@
+2026-11-02 22:12:20.041 [info] semantic_tokens_full file:///voc/work/project/starter/main.py 
+2026-11-02 22:12:20.225 [info] semantic_tokens_range file:///voc/work/project/starter/main.py 0:0-42:29
+2026-11-02 22:12:20.858 [info] [Debug - 10:12:20 PM] no definitions found for name "required" of type 'statement' (36:8)
+2026-11-02 22:12:20.858 [info] [Debug - 10:12:20 PM] no definitions found for name "help" of type 'statement' (37:8)
+2026-11-02 22:12:20.862 [info] [Debug - 10:12:20 PM] no definitions found for name "default" of type 'statement' (43:8)
+2026-11-02 22:12:21.455 [info] [Debug - 10:12:21 PM] no definitions found for name "file" of type 'statement' (62:37)
+2026-11-02 22:12:21.457 [info] [Debug - 10:12:21 PM] no definitions found for name "mode" of type 'statement' (67:44)
+2026-11-02 22:12:21.989 [info] [Debug - 10:12:21 PM] no matching semantic token for "__name__" of type 'statement' (101:3)
+2026-11-02 22:12:35.334 [info] semantic_tokens_full file:///voc/work/project/starter/tests/test_data_loader.py 
+2026-11-02 22:12:35.756 [info] semantic_tokens_range file:///voc/work/project/starter/tests/test_data_loader.py 0:0-42:36
+2026-11-02 22:12:36.016 [info] ERROR:pygls.protocol.json_rpc:Exception occurred for message "10": _pickle.UnpicklingError: invalid load key, ' '.
+NoneType: None
+
+2026-11-02 22:12:36.018 [info] [Error - 10:12:36 PM] Request textDocument/semanticTokens/range failed.
+2026-11-02 22:12:36.020 [info]   Message: _pickle.UnpicklingError: invalid load key, ' '.
+  Code: -32603 
+[object Object]
+2026-11-02 22:12:36.035 [info] ERROR:pygls.protocol.json_rpc:Exception occurred for message "8": AttributeError: 'dict' object has no attribute 'append'
+NoneType: None
+
+2026-11-02 22:12:36.035 [info] [Error - 10:12:36 PM] Request textDocument/semanticTokens/full failed.
+2026-11-02 22:12:36.038 [info]   Message: AttributeError: 'dict' object has no attribute 'append'
+  Code: -32603 
+[object Object]
+2026-11-02 22:12:37.814 [info] ERROR:pygls.protocol.json_rpc:Failed to handle request 11 textDocument/hover HoverParams(text_document=TextDocumentIdentifier(uri='file:///voc/work/project/starter/tests/test_data_loader.py'), position=17:15, work_done_token=None)
+Traceback (most recent call last):
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/pygls/protocol/json_rpc.py", line 266, in _handle_request
+    self._execute_request(msg_id, handler, params)
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/pygls/protocol/json_rpc.py", line 188, in _execute_request
+    self._send_response(msg_id, handler(params))
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi_language_server/notebook_utils.py", line 373, in wrapped
+    result = f(notebook_server, notebook_params)
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi_language_server/server.py", line 486, in hover
+    hover_text = jedi_utils.hover_text(
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi_language_server/jedi_utils.py", line 681, in hover_text
+    header_plain = "\n".join(get_full_signatures(name))
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi_language_server/jedi_utils.py", line 626, in get_full_signatures
+    signatures = name.get_signatures()
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi/api/classes.py", line 581, in get_signatures
+    for s in self._get_signatures()
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi/api/classes.py", line 570, in _get_signatures
+    return [sig for name in names for sig in name.infer().get_signatures()]
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi/api/classes.py", line 570, in <listcomp>
+    return [sig for name in names for sig in name.infer().get_signatures()]
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi/inference/names.py", line 281, in infer
+    return tree_name_to_values(
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi/plugins/__init__.py", line 21, in wrapper
+    return built_functions[public_name](*args, **kwargs)
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi/plugins/stdlib.py", line 878, in wrapper
+    return func(inference_state, context, tree_name)
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi/plugins/django.py", line 177, in wrapper
+    result = func(inference_state, context, tree_name)
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi/inference/syntax_tree.py", line 758, in tree_name_to_values
+    types = infer_expr_stmt(context, node, tree_name)
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi/inference/syntax_tree.py", line 83, in wrapper
+    return func(context, *args, **kwargs)
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi/inference/syntax_tree.py", line 377, in infer_expr_stmt
+    return _infer_expr_stmt(context, stmt, seek_name)
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi/debug.py", line 81, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi/inference/syntax_tree.py", line 410, in _infer_expr_stmt
+    value_set = context.infer_node(rhs)
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi/inference/context.py", line 224, in infer_node
+    return infer_node(self, node)
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi/inference/syntax_tree.py", line 157, in infer_node
+    return _infer_node_if_inferred(context, element)
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi/inference/syntax_tree.py", line 170, in _infer_node_if_inferred
+    return _infer_node_cached(context, element)
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi/inference/cache.py", line 44, in wrapper
+    rv = function(obj, *args, **kwargs)
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi/inference/syntax_tree.py", line 175, in _infer_node_cached
+    return _infer_node(context, element)
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi/debug.py", line 81, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi/inference/syntax_tree.py", line 83, in wrapper
+    return func(context, *args, **kwargs)
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi/inference/syntax_tree.py", line 255, in _infer_node
+    return infer_or_test(context, element)
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi/inference/syntax_tree.py", line 461, in infer_or_test
+    types = context.infer_node(next(iterator))
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi/inference/context.py", line 224, in infer_node
+    return infer_node(self, node)
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi/inference/syntax_tree.py", line 157, in infer_node
+    return _infer_node_if_inferred(context, element)
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi/inference/syntax_tree.py", line 170, in _infer_node_if_inferred
+    return _infer_node_cached(context, element)
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi/inference/cache.py", line 44, in wrapper
+    rv = function(obj, *args, **kwargs)
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi/inference/syntax_tree.py", line 175, in _infer_node_cached
+    return _infer_node(context, element)
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi/debug.py", line 81, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi/inference/syntax_tree.py", line 83, in wrapper
+    return func(context, *args, **kwargs)
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi/inference/syntax_tree.py", line 185, in _infer_node
+    return infer_atom(context, element)
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi/inference/syntax_tree.py", line 305, in infer_atom
+    return context.py__getattribute__(atom, position=position)
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi/inference/context.py", line 77, in py__getattribute__
+    values = ValueSet.from_sets(name.infer() for name in names)
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi/inference/base_value.py", line 430, in from_sets
+    for set_ in sets:
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi/inference/context.py", line 77, in <genexpr>
+    values = ValueSet.from_sets(name.infer() for name in names)
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi/plugins/__init__.py", line 21, in wrapper
+    return built_functions[public_name](*args, **kwargs)
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi/plugins/pytest.py", line 63, in wrapper
+    fixtures = _goto_pytest_fixture(
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi/plugins/pytest.py", line 110, in _goto_pytest_fixture
+    for module_context in _iter_pytest_modules(module_context, skip_own_module=skip_own_module):
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi/plugins/pytest.py", line 201, in _iter_pytest_modules
+    for module_value in module_context.inference_state.import_module(names):
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi/inference/__init__.py", line 112, in import_module
+    return imports.import_module_by_names(
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi/inference/imports.py", line 376, in import_module_by_names
+    value_set = ValueSet.from_sets([
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi/inference/imports.py", line 377, in <listcomp>
+    import_module(
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi/plugins/__init__.py", line 21, in wrapper
+    return built_functions[public_name](*args, **kwargs)
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi/plugins/flask.py", line 20, in wrapper
+    return callback(inference_state, import_names, module_context, *args, **kwargs)
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi/inference/gradual/typeshed.py", line 115, in wrapper
+    python_value_set = ValueSet.from_sets(
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi/inference/base_value.py", line 430, in from_sets
+    for set_ in sets:
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi/inference/gradual/typeshed.py", line 116, in <genexpr>
+    func(inference_state, import_names, p, sys_path,)
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi/inference/imports.py", line 411, in import_module
+    file_io_or_ns, is_pkg = inference_state.compiled_subprocess.get_module_info(
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi/inference/compiled/subprocess/__init__.py", line 188, in wrapper
+    result = self._compiled_subprocess.run(
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi/inference/compiled/subprocess/__init__.py", line 296, in run
+    return self._send(inference_state_id, function, args, kwargs)
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi/inference/compiled/subprocess/__init__.py", line 318, in _send
+    is_exception, traceback, result = pickle_load(self._get_process().stdout)
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi/_compatibility.py", line 25, in pickle_load
+    return Unpickler(file).load()
+_pickle.UnpicklingError: could not find MARK
+
+2026-11-02 22:12:37.818 [info] WARNING:pygls.protocol.json_rpc:Cancel notification for unknown message id "11"
+
+2026-11-02 22:12:37.822 [info] [Error - 10:12:37 PM] Request textDocument/hover failed.
+2026-11-02 22:12:37.826 [info]   Message: _pickle.UnpicklingError: could not find MARK
+  Code: -32603 
+[object Object]
+2026-11-02 22:12:39.756 [info] semantic_tokens_range file:///voc/work/project/starter/tests/test_data_loader.py 7:0-71:69
+2026-11-02 22:12:39.843 [info] ERROR:pygls.protocol.json_rpc:Exception occurred for message "12": _pickle.UnpicklingError: could not find MARK
+NoneType: None
+
+2026-11-02 22:12:39.843 [info] [Error - 10:12:39 PM] Request textDocument/semanticTokens/range failed.
+2026-11-02 22:12:39.847 [info]   Message: _pickle.UnpicklingError: could not find MARK
+  Code: -32603 
+[object Object]
+2026-11-02 22:12:40.319 [info] semantic_tokens_range file:///voc/work/project/starter/tests/test_data_loader.py 10:0-74:46
+2026-11-02 22:12:40.409 [info] ERROR:pygls.protocol.json_rpc:Exception occurred for message "13": _pickle.UnpicklingError: could not find MARK
+NoneType: None
+
+2026-11-02 22:12:40.409 [info] [Error - 10:12:40 PM] Request textDocument/semanticTokens/range failed.
+2026-11-02 22:12:40.413 [info]   Message: _pickle.UnpicklingError: could not find MARK
+  Code: -32603 
+[object Object]
+2026-11-02 22:12:40.935 [info] semantic_tokens_range file:///voc/work/project/starter/tests/test_data_loader.py 15:0-79:53
+2026-11-02 22:12:41.016 [info] ERROR:pygls.protocol.json_rpc:Exception occurred for message "14": _pickle.UnpicklingError: could not find MARK
+NoneType: None
+
+2026-11-02 22:12:41.016 [info] [Error - 10:12:41 PM] Request textDocument/semanticTokens/range failed.
+2026-11-02 22:12:41.019 [info]   Message: _pickle.UnpicklingError: could not find MARK
+  Code: -32603 
+[object Object]
+2026-11-02 22:12:41.731 [info] semantic_tokens_range file:///voc/work/project/starter/tests/test_data_loader.py 21:0-84:0
+2026-11-02 22:12:41.742 [info] ERROR:pygls.protocol.json_rpc:Exception occurred for message "15": _pickle.UnpicklingError: could not find MARK
+NoneType: None
+
+2026-11-02 22:12:41.743 [info] [Error - 10:12:41 PM] Request textDocument/semanticTokens/range failed.
+2026-11-02 22:12:41.748 [info]   Message: _pickle.UnpicklingError: could not find MARK
+  Code: -32603 
+[object Object]
+2026-11-02 22:12:42.329 [info] semantic_tokens_range file:///voc/work/project/starter/tests/test_data_loader.py 26:0-90:43
+2026-11-02 22:12:42.414 [info] ERROR:pygls.protocol.json_rpc:Exception occurred for message "16": _pickle.UnpicklingError: could not find MARK
+NoneType: None
+
+2026-11-02 22:12:42.414 [info] [Error - 10:12:42 PM] Request textDocument/semanticTokens/range failed.
+2026-11-02 22:12:42.419 [info]   Message: _pickle.UnpicklingError: could not find MARK
+  Code: -32603 
+[object Object]
+2026-11-02 22:12:43.317 [info] semantic_tokens_range file:///voc/work/project/starter/tests/test_data_loader.py 31:0-95:0
+2026-11-02 22:12:43.393 [info] ERROR:pygls.protocol.json_rpc:Exception occurred for message "17": _pickle.UnpicklingError: could not find MARK
+NoneType: None
+
+2026-11-02 22:12:43.394 [info] [Error - 10:12:43 PM] Request textDocument/semanticTokens/range failed.
+2026-11-02 22:12:43.398 [info]   Message: _pickle.UnpicklingError: could not find MARK
+  Code: -32603 
+[object Object]
+2026-11-02 22:12:43.876 [info] semantic_tokens_range file:///voc/work/project/starter/tests/test_data_loader.py 39:0-103:43
+2026-11-02 22:12:43.886 [info] ERROR:pygls.protocol.json_rpc:Exception occurred for message "18": _pickle.UnpicklingError: could not find MARK
+NoneType: None
+
+2026-11-02 22:12:43.887 [info] [Error - 10:12:43 PM] Request textDocument/semanticTokens/range failed.
+2026-11-02 22:12:43.891 [info]   Message: _pickle.UnpicklingError: could not find MARK
+  Code: -32603 
+[object Object]
+2026-11-02 22:12:48.164 [info] ERROR:pygls.protocol.json_rpc:Failed to handle request 19 textDocument/hover HoverParams(text_document=TextDocumentIdentifier(uri='file:///voc/work/project/starter/tests/test_data_loader.py'), position=77:14, work_done_token=None)
+Traceback (most recent call last):
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/pygls/protocol/json_rpc.py", line 266, in _handle_request
+    self._execute_request(msg_id, handler, params)
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/pygls/protocol/json_rpc.py", line 188, in _execute_request
+    self._send_response(msg_id, handler(params))
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi_language_server/notebook_utils.py", line 373, in wrapped
+    result = f(notebook_server, notebook_params)
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi_language_server/server.py", line 487, in hover
+    jedi_script.help(*jedi_lines),
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi/api/helpers.py", line 487, in wrapper
+    return func(self, line, column, *args, **kwargs)
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi/api/__init__.py", line 372, in help
+    definitions = self.goto(line, column, follow_imports=True)
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi/api/helpers.py", line 487, in wrapper
+    return func(self, line, column, *args, **kwargs)
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi/api/__init__.py", line 304, in goto
+    names = convert_names(
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi/inference/gradual/conversion.py", line 154, in convert_names
+    return _try_stub_to_python_names(
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi/inference/utils.py", line 16, in wrapper
+    return list(func(*args, **kwargs))
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi/inference/gradual/conversion.py", line 66, in _try_stub_to_python_names
+    for name in names:
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi/api/helpers.py", line 189, in filter_follow_imports
+    name.goto(),
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi/inference/names.py", line 157, in goto
+    module_names = goto_import(context, name)
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi/inference/cache.py", line 44, in wrapper
+    rv = function(obj, *args, **kwargs)
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi/inference/imports.py", line 75, in goto_import
+    _prepare_infer_import(module_context, tree_name)
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi/inference/imports.py", line 116, in _prepare_infer_import
+    return from_import_name, tuple(import_path), import_node.level, importer.follow()
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi/inference/imports.py", line 296, in follow
+    return import_module_by_names(
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi/inference/imports.py", line 376, in import_module_by_names
+    value_set = ValueSet.from_sets([
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi/inference/imports.py", line 377, in <listcomp>
+    import_module(
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi/plugins/__init__.py", line 21, in wrapper
+    return built_functions[public_name](*args, **kwargs)
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi/plugins/flask.py", line 20, in wrapper
+    return callback(inference_state, import_names, module_context, *args, **kwargs)
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi/inference/gradual/typeshed.py", line 115, in wrapper
+    python_value_set = ValueSet.from_sets(
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi/inference/base_value.py", line 430, in from_sets
+    for set_ in sets:
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi/inference/gradual/typeshed.py", line 116, in <genexpr>
+    func(inference_state, import_names, p, sys_path,)
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi/inference/imports.py", line 411, in import_module
+    file_io_or_ns, is_pkg = inference_state.compiled_subprocess.get_module_info(
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi/inference/compiled/subprocess/__init__.py", line 188, in wrapper
+    result = self._compiled_subprocess.run(
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi/inference/compiled/subprocess/__init__.py", line 296, in run
+    return self._send(inference_state_id, function, args, kwargs)
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi/inference/compiled/subprocess/__init__.py", line 318, in _send
+    is_exception, traceback, result = pickle_load(self._get_process().stdout)
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi/_compatibility.py", line 25, in pickle_load
+    return Unpickler(file).load()
+_pickle.UnpicklingError: could not find MARK
+
+2026-11-02 22:12:48.165 [info] [Error - 10:12:48 PM] Request textDocument/hover failed.
+2026-11-02 22:12:48.169 [info]   Message: _pickle.UnpicklingError: could not find MARK
+  Code: -32603 
+[object Object]
+2026-11-02 22:21:11.919 [info] ERROR:pygls.protocol.json_rpc:Failed to handle request 21 textDocument/documentSymbol DocumentSymbolParams(text_document=TextDocumentIdentifier(uri='file:///voc/work/project/starter/main.py'), work_done_token=None, partial_result_token=None)
+Traceback (most recent call last):
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/pygls/protocol/json_rpc.py", line 266, in _handle_request
+    self._execute_request(msg_id, handler, params)
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/pygls/protocol/json_rpc.py", line 188, in _execute_request
+    self._send_response(msg_id, handler(params))
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi_language_server/server.py", line 546, in document_symbol
+    document_symbols = jedi_utils.lsp_document_symbols(names)
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi_language_server/jedi_utils.py", line 225, in lsp_document_symbols
+    symbol_range = _document_symbol_range(name)
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi_language_server/jedi_utils.py", line 204, in _document_symbol_range
+    end = name.get_definition_end_position()
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi/api/classes.py", line 260, in get_definition_end_position
+    if self.type in ("function", "class"):
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi/api/classes.py", line 190, in type
+    for value in self._name.infer():
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi/inference/names.py", line 281, in infer
+    return tree_name_to_values(
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi/plugins/__init__.py", line 21, in wrapper
+    return built_functions[public_name](*args, **kwargs)
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi/plugins/stdlib.py", line 878, in wrapper
+    return func(inference_state, context, tree_name)
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi/plugins/django.py", line 177, in wrapper
+    result = func(inference_state, context, tree_name)
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi/inference/syntax_tree.py", line 771, in tree_name_to_values
+    types = imports.infer_import(context, tree_name)
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi/inference/cache.py", line 44, in wrapper
+    rv = function(obj, *args, **kwargs)
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi/inference/imports.py", line 53, in infer_import
+    _prepare_infer_import(module_context, tree_name)
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi/inference/imports.py", line 116, in _prepare_infer_import
+    return from_import_name, tuple(import_path), import_node.level, importer.follow()
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi/inference/imports.py", line 296, in follow
+    return import_module_by_names(
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi/inference/imports.py", line 376, in import_module_by_names
+    value_set = ValueSet.from_sets([
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi/inference/imports.py", line 377, in <listcomp>
+    import_module(
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi/plugins/__init__.py", line 21, in wrapper
+    return built_functions[public_name](*args, **kwargs)
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi/plugins/flask.py", line 20, in wrapper
+    return callback(inference_state, import_names, module_context, *args, **kwargs)
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi/inference/gradual/typeshed.py", line 115, in wrapper
+    python_value_set = ValueSet.from_sets(
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi/inference/base_value.py", line 430, in from_sets
+    for set_ in sets:
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi/inference/gradual/typeshed.py", line 116, in <genexpr>
+    func(inference_state, import_names, p, sys_path,)
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi/inference/imports.py", line 411, in import_module
+    file_io_or_ns, is_pkg = inference_state.compiled_subprocess.get_module_info(
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi/inference/compiled/subprocess/__init__.py", line 188, in wrapper
+    result = self._compiled_subprocess.run(
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi/inference/compiled/subprocess/__init__.py", line 293, in run
+    self._send(delete_id, None)
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi/inference/compiled/subprocess/__init__.py", line 318, in _send
+    is_exception, traceback, result = pickle_load(self._get_process().stdout)
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi/_compatibility.py", line 25, in pickle_load
+    return Unpickler(file).load()
+_pickle.UnpicklingError: could not find MARK
+
+2026-11-02 22:21:11.922 [info] [Error - 10:21:11 PM] Request textDocument/documentSymbol failed.
+2026-11-02 22:21:11.927 [info]   Message: _pickle.UnpicklingError: could not find MARK
+  Code: -32603 
+[object Object]
+2026-11-02 22:21:11.946 [info] semantic_tokens_full file:///voc/work/project/starter/main.py 
+2026-11-02 22:21:11.950 [info] ERROR:pygls.protocol.json_rpc:Exception occurred for message "22": _pickle.UnpicklingError: could not find MARK
+NoneType: None
+
+2026-11-02 22:21:11.952 [info] [Error - 10:21:11 PM] Request textDocument/semanticTokens/full failed.
+2026-11-02 22:21:11.955 [info]   Message: _pickle.UnpicklingError: could not find MARK
+  Code: -32603 
+[object Object]
+2026-11-02 22:21:12.199 [info] ERROR:pygls.protocol.json_rpc:Failed to handle request 23 textDocument/documentSymbol DocumentSymbolParams(text_document=TextDocumentIdentifier(uri='file:///voc/work/project/starter/main.py'), work_done_token=None, partial_result_token=None)
+Traceback (most recent call last):
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/pygls/protocol/json_rpc.py", line 266, in _handle_request
+    self._execute_request(msg_id, handler, params)
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/pygls/protocol/json_rpc.py", line 188, in _execute_request
+    self._send_response(msg_id, handler(params))
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi_language_server/server.py", line 546, in document_symbol
+    document_symbols = jedi_utils.lsp_document_symbols(names)
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi_language_server/jedi_utils.py", line 225, in lsp_document_symbols
+    symbol_range = _document_symbol_range(name)
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi_language_server/jedi_utils.py", line 204, in _document_symbol_range
+    end = name.get_definition_end_position()
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi/api/classes.py", line 260, in get_definition_end_position
+    if self.type in ("function", "class"):
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi/api/classes.py", line 190, in type
+    for value in self._name.infer():
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi/inference/names.py", line 281, in infer
+    return tree_name_to_values(
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi/plugins/__init__.py", line 21, in wrapper
+    return built_functions[public_name](*args, **kwargs)
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi/plugins/stdlib.py", line 878, in wrapper
+    return func(inference_state, context, tree_name)
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi/plugins/django.py", line 177, in wrapper
+    result = func(inference_state, context, tree_name)
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi/inference/syntax_tree.py", line 771, in tree_name_to_values
+    types = imports.infer_import(context, tree_name)
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi/inference/cache.py", line 44, in wrapper
+    rv = function(obj, *args, **kwargs)
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi/inference/imports.py", line 53, in infer_import
+    _prepare_infer_import(module_context, tree_name)
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi/inference/imports.py", line 116, in _prepare_infer_import
+    return from_import_name, tuple(import_path), import_node.level, importer.follow()
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi/inference/imports.py", line 296, in follow
+    return import_module_by_names(
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi/inference/imports.py", line 376, in import_module_by_names
+    value_set = ValueSet.from_sets([
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi/inference/imports.py", line 377, in <listcomp>
+    import_module(
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi/plugins/__init__.py", line 21, in wrapper
+    return built_functions[public_name](*args, **kwargs)
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi/plugins/flask.py", line 20, in wrapper
+    return callback(inference_state, import_names, module_context, *args, **kwargs)
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi/inference/gradual/typeshed.py", line 115, in wrapper
+    python_value_set = ValueSet.from_sets(
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi/inference/base_value.py", line 430, in from_sets
+    for set_ in sets:
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi/inference/gradual/typeshed.py", line 116, in <genexpr>
+    func(inference_state, import_names, p, sys_path,)
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi/inference/imports.py", line 411, in import_module
+    file_io_or_ns, is_pkg = inference_state.compiled_subprocess.get_module_info(
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi/inference/compiled/subprocess/__init__.py", line 188, in wrapper
+    result = self._compiled_subprocess.run(
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi/inference/compiled/subprocess/__init__.py", line 296, in run
+    return self._send(inference_state_id, function, args, kwargs)
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi/inference/compiled/subprocess/__init__.py", line 318, in _send
+    is_exception, traceback, result = pickle_load(self._get_process().stdout)
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi/_compatibility.py", line 25, in pickle_load
+    return Unpickler(file).load()
+_pickle.UnpicklingError: could not find MARK
+
+2026-11-02 22:21:12.200 [info] [Error - 10:21:12 PM] Request textDocument/documentSymbol failed.
+2026-11-02 22:21:12.204 [info]   Message: _pickle.UnpicklingError: could not find MARK
+  Code: -32603 
+[object Object]
+2026-11-02 22:21:12.382 [info] semantic_tokens_range file:///voc/work/project/starter/main.py 65:0-102:0
+2026-11-02 22:21:12.386 [info] ERROR:pygls.protocol.json_rpc:Exception occurred for message "24": _pickle.UnpicklingError: could not find MARK
+NoneType: None
+
+2026-11-02 22:21:12.387 [info] [Error - 10:21:12 PM] Request textDocument/semanticTokens/range failed.
+2026-11-02 22:21:12.390 [info]   Message: _pickle.UnpicklingError: could not find MARK
+  Code: -32603 
+[object Object]
+2026-11-02 22:21:13.956 [info] semantic_tokens_range file:///voc/work/project/starter/main.py 0:0-42:29
+2026-11-02 22:21:13.960 [info] ERROR:pygls.protocol.json_rpc:Exception occurred for message "25": _pickle.UnpicklingError: could not find MARK
+NoneType: None
+
+2026-11-02 22:21:13.961 [info] [Error - 10:21:13 PM] Request textDocument/semanticTokens/range failed.
+2026-11-02 22:21:13.965 [info]   Message: _pickle.UnpicklingError: could not find MARK
+  Code: -32603 
+[object Object]
+2026-11-02 22:21:14.740 [info] ERROR:pygls.protocol.json_rpc:Failed to handle request 26 textDocument/hover HoverParams(text_document=TextDocumentIdentifier(uri='file:///voc/work/project/starter/main.py'), position=18:38, work_done_token=None)
+Traceback (most recent call last):
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/pygls/protocol/json_rpc.py", line 266, in _handle_request
+    self._execute_request(msg_id, handler, params)
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/pygls/protocol/json_rpc.py", line 188, in _execute_request
+    self._send_response(msg_id, handler(params))
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi_language_server/notebook_utils.py", line 373, in wrapped
+    result = f(notebook_server, notebook_params)
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi_language_server/server.py", line 487, in hover
+    jedi_script.help(*jedi_lines),
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi/api/helpers.py", line 487, in wrapper
+    return func(self, line, column, *args, **kwargs)
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi/api/__init__.py", line 372, in help
+    definitions = self.goto(line, column, follow_imports=True)
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi/api/helpers.py", line 487, in wrapper
+    return func(self, line, column, *args, **kwargs)
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi/api/__init__.py", line 300, in goto
+    names = list(name.goto())
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi/inference/names.py", line 205, in goto
+    values = infer_call_of_leaf(context, name, cut_own_trailer=True)
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi/inference/helpers.py", line 104, in infer_call_of_leaf
+    values = context.infer_node(base)
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi/inference/context.py", line 224, in infer_node
+    return infer_node(self, node)
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi/inference/syntax_tree.py", line 157, in infer_node
+    return _infer_node_if_inferred(context, element)
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi/inference/syntax_tree.py", line 170, in _infer_node_if_inferred
+    return _infer_node_cached(context, element)
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi/inference/cache.py", line 44, in wrapper
+    rv = function(obj, *args, **kwargs)
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi/inference/syntax_tree.py", line 175, in _infer_node_cached
+    return _infer_node(context, element)
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi/debug.py", line 81, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi/inference/syntax_tree.py", line 83, in wrapper
+    return func(context, *args, **kwargs)
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi/inference/syntax_tree.py", line 185, in _infer_node
+    return infer_atom(context, element)
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi/inference/syntax_tree.py", line 305, in infer_atom
+    return context.py__getattribute__(atom, position=position)
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi/inference/context.py", line 77, in py__getattribute__
+    values = ValueSet.from_sets(name.infer() for name in names)
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi/inference/base_value.py", line 430, in from_sets
+    for set_ in sets:
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi/inference/context.py", line 77, in <genexpr>
+    values = ValueSet.from_sets(name.infer() for name in names)
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi/inference/names.py", line 281, in infer
+    return tree_name_to_values(
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi/plugins/__init__.py", line 21, in wrapper
+    return built_functions[public_name](*args, **kwargs)
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi/plugins/stdlib.py", line 878, in wrapper
+    return func(inference_state, context, tree_name)
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi/plugins/django.py", line 177, in wrapper
+    result = func(inference_state, context, tree_name)
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi/inference/syntax_tree.py", line 771, in tree_name_to_values
+    types = imports.infer_import(context, tree_name)
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi/inference/cache.py", line 44, in wrapper
+    rv = function(obj, *args, **kwargs)
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi/inference/imports.py", line 53, in infer_import
+    _prepare_infer_import(module_context, tree_name)
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi/inference/imports.py", line 116, in _prepare_infer_import
+    return from_import_name, tuple(import_path), import_node.level, importer.follow()
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi/inference/imports.py", line 296, in follow
+    return import_module_by_names(
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi/inference/imports.py", line 376, in import_module_by_names
+    value_set = ValueSet.from_sets([
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi/inference/imports.py", line 377, in <listcomp>
+    import_module(
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi/plugins/__init__.py", line 21, in wrapper
+    return built_functions[public_name](*args, **kwargs)
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi/plugins/flask.py", line 20, in wrapper
+    return callback(inference_state, import_names, module_context, *args, **kwargs)
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi/inference/gradual/typeshed.py", line 115, in wrapper
+    python_value_set = ValueSet.from_sets(
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi/inference/base_value.py", line 430, in from_sets
+    for set_ in sets:
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi/inference/gradual/typeshed.py", line 116, in <genexpr>
+    func(inference_state, import_names, p, sys_path,)
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi/inference/imports.py", line 411, in import_module
+    file_io_or_ns, is_pkg = inference_state.compiled_subprocess.get_module_info(
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi/inference/compiled/subprocess/__init__.py", line 188, in wrapper
+    result = self._compiled_subprocess.run(
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi/inference/compiled/subprocess/__init__.py", line 296, in run
+    return self._send(inference_state_id, function, args, kwargs)
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi/inference/compiled/subprocess/__init__.py", line 318, in _send
+    is_exception, traceback, result = pickle_load(self._get_process().stdout)
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi/_compatibility.py", line 25, in pickle_load
+    return Unpickler(file).load()
+_pickle.UnpicklingError: could not find MARK
+
+2026-11-02 22:21:14.745 [info] [Error - 10:21:14 PM] Request textDocument/hover failed.
+2026-11-02 22:21:14.749 [info]   Message: _pickle.UnpicklingError: could not find MARK
+  Code: -32603 
+[object Object]
+2026-11-02 22:21:56.445 [info] ERROR:pygls.protocol.json_rpc:Failed to handle request 27 textDocument/hover HoverParams(text_document=TextDocumentIdentifier(uri='file:///voc/work/project/starter/main.py'), position=8:1, work_done_token=None)
+Traceback (most recent call last):
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/pygls/protocol/json_rpc.py", line 266, in _handle_request
+    self._execute_request(msg_id, handler, params)
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/pygls/protocol/json_rpc.py", line 188, in _execute_request
+    self._send_response(msg_id, handler(params))
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi_language_server/notebook_utils.py", line 373, in wrapped
+    result = f(notebook_server, notebook_params)
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi_language_server/server.py", line 487, in hover
+    jedi_script.help(*jedi_lines),
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi/api/helpers.py", line 487, in wrapper
+    return func(self, line, column, *args, **kwargs)
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi/api/__init__.py", line 396, in help
+    name = KeywordName(self._inference_state, leaf.value)
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi/inference/names.py", line 103, in __init__
+    self.parent_context = inference_state.builtins_module
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi/inference/cache.py", line 44, in wrapper
+    rv = function(obj, *args, **kwargs)
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi/inference/__init__.py", line 129, in builtins_module
+    builtins_module, = self.import_module((module_name,), sys_path=[])
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi/inference/__init__.py", line 112, in import_module
+    return imports.import_module_by_names(
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi/inference/imports.py", line 376, in import_module_by_names
+    value_set = ValueSet.from_sets([
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi/inference/imports.py", line 377, in <listcomp>
+    import_module(
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi/plugins/__init__.py", line 21, in wrapper
+    return built_functions[public_name](*args, **kwargs)
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi/plugins/flask.py", line 20, in wrapper
+    return callback(inference_state, import_names, module_context, *args, **kwargs)
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi/inference/gradual/typeshed.py", line 115, in wrapper
+    python_value_set = ValueSet.from_sets(
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi/inference/base_value.py", line 430, in from_sets
+    for set_ in sets:
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi/inference/gradual/typeshed.py", line 116, in <genexpr>
+    func(inference_state, import_names, p, sys_path,)
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi/inference/imports.py", line 411, in import_module
+    file_io_or_ns, is_pkg = inference_state.compiled_subprocess.get_module_info(
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi/inference/compiled/subprocess/__init__.py", line 188, in wrapper
+    result = self._compiled_subprocess.run(
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi/inference/compiled/subprocess/__init__.py", line 296, in run
+    return self._send(inference_state_id, function, args, kwargs)
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi/inference/compiled/subprocess/__init__.py", line 318, in _send
+    is_exception, traceback, result = pickle_load(self._get_process().stdout)
+  File "/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/lib/jedilsp/jedi/_compatibility.py", line 25, in pickle_load
+    return Unpickler(file).load()
+_pickle.UnpicklingError: could not find MARK
+
+2026-11-02 22:21:56.446 [info] [Error - 10:21:56 PM] Request textDocument/hover failed.
+2026-11-02 22:21:56.450 [info]   Message: _pickle.UnpicklingError: could not find MARK
+  Code: -32603 
+[object Object]
+2026-11-02 22:22:00.044 [info] semantic_tokens_range file:///voc/work/project/starter/main.py 0:0-57:45
+2026-11-02 22:22:00.048 [info] ERROR:pygls.protocol.json_rpc:Exception occurred for message "28": _pickle.UnpicklingError: could not find MARK
+NoneType: None
+
+2026-11-02 22:22:00.051 [info] [Error - 10:22:00 PM] Request textDocument/semanticTokens/range failed.
+2026-11-02 22:22:00.057 [info]   Message: _pickle.UnpicklingError: could not find MARK
+  Code: -32603 
+[object Object]
+2026-11-02 22:22:01.188 [info] semantic_tokens_range file:///voc/work/project/starter/main.py 0:0-42:29
+2026-11-02 22:22:01.192 [info] ERROR:pygls.protocol.json_rpc:Exception occurred for message "29": _pickle.UnpicklingError: could not find MARK
+NoneType: None
+
+2026-11-02 22:22:01.193 [info] [Error - 10:22:01 PM] Request textDocument/semanticTokens/range failed.
+2026-11-02 22:22:01.197 [info]   Message: _pickle.UnpicklingError: could not find MARK
+  Code: -32603 
+[object Object]

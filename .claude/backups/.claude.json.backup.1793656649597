@@ -1,0 +1,47 @@
+{
+  "numStartups": 1,
+  "customApiKeyResponses": {
+    "approved": [],
+    "rejected": [
+      "a7d0b9e5301.57468567"
+    ]
+  },
+  "tipsHistory": {
+    "new-user-warmup": 1,
+    "plan-mode-for-complex-tasks": 1
+  },
+  "firstStartTime": "2026-11-02T20:32:53.738Z",
+  "firstStartVersion": "2.1.260",
+  "machineID": "81b068f76784d282e78222514a856f8ef094d7fb0dbc56b9bfaf3b2c74c7332d",
+  "opusProMigrationComplete": true,
+  "sonnet1m45MigrationComplete": true,
+  "seenNotifications": {},
+  "hasResetAutoModeOptInForDefaultOffer": true,
+  "migrationVersion": 14,
+  "userID": "656397add372d64f1469e9221cc4a8217d941a97b976cd8185de45043979be97",
+  "changelogLastFetched": 1793651574492,
+  "hasCompletedOnboarding": true,
+  "lastOnboardingVersion": "2.1.260",
+  "projects": {
+    "/voc/work/project/starter": {
+      "allowedTools": [],
+      "mcpContextUris": [],
+      "mcpServers": {},
+      "enabledMcpjsonServers": [],
+      "disabledMcpjsonServers": [],
+      "hasTrustDialogAccepted": true,
+      "hasClaudeMdExternalIncludesApproved": false,
+      "hasClaudeMdExternalIncludesWarningShown": false,
+      "lastGracefulShutdown": false,
+      "lastVersionBase": "2.1.260"
+    }
+  },
+  "lastReleaseNotesSeen": "2.1.260",
+  "closedIssuesLastChecked": 1793652285338,
+  "officialMarketplaceAutoInstallAttempted": true,
+  "officialMarketplaceAutoInstalled": true,
+  "tipLifetimeShownCounts": {
+    "new-user-warmup": 1,
+    "plan-mode-for-complex-tasks": 1
+  }
+}

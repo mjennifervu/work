@@ -1,0 +1,10 @@
+{
+	"folders": [
+		{
+			"name": "work",
+			"uri": "vscode-remote://vocproxy-1-60.us-west-2.vocareum.com/voc/work"
+		}
+	],
+	"remoteAuthority": "vocproxy-1-60.us-west-2.vocareum.com",
+	"settings": {}
+}
